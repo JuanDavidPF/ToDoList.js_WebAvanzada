@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+}
+
+html,
+
+
+mainContainer {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+
+}
+
+div>h1 {
+    font-size: 75px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(167, 167, 167);
+
+}
+
+.list__container {
+
+    width: 100%;
+}
+
+.list__container>header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.list__container__checkNotes {
+    width: 46px;
+    height: 46px;
+}
+
+.list__container__newNote {
+    width: 85%;
+    height: 40px;
+    font-size: 30px;
+    padding-left: 15px;
+    font-weight: 100;
+}
+
+.list__container__newNote::placeholder {
+
+    color: rgb(50, 243, 185);
+    font-style: italic;
+    font-size: 30px;
+}
+
+.list__container>main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.list__container__chore {
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    margin: 2px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: rgb(199, 199, 199);
+    border-style: solid;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    padding: 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.list__container__chore.checked {
+    background-color: rgb(50, 243, 185);
+    font-style: italic;
+    color: rgb(97, 97, 97);
+}
+
+.list__container__chore>h2 {
+    margin-left: 10px;
+    width: 80%;
+
+}
+
+.list__container__chore.checked>h2 {
+    text-decoration: line-through;
+}
+
+.list__container__chore>input {
+    width: 30px;
+    height: 30px;
+
+}
+
+.list__container__chore>button {
+    width: 45px;
+    height: 45px;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    display: none;
+    color: rgb(158, 158, 158);
+    cursor: pointer;
+}
+
+.list__container__chore:hover>button {
+    display: block;
+}
+
+
+.invisible {
+    display: none;
+}
+
+.list__container>footer {
+    background-color: rgb(221, 223, 223);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list__container>footer>p {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.filters>button {
+
+ 
+    border: 0;
+    font-size: 17px;
+}
+
+.filters>button.selected {
+
+    background-color: rgb(255, 122, 122);
+   
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h1>TO DO LIST</h1>
+
+      <section class="list__container">
+        <header>
+          <input
+            class="list__container__checkNotes"
+            type="checkbox"
+            name=""
+            id=""
+          />
+
+          <input
+            class="list__container__newNote"
+            placeholder="Add a new chore"
+            name=""
+            id=""
+          />
+        </header>
+
+        <main>
+          <div class="list__container__chore prefab invisible">
+            <input
+              class="list__container__checkNotes"
+              type="checkbox"
+              name=""
+              id=""
+            />
+            <h2></h2>
+
+            <button>X</button>
+          </div>
+        </main>
+        <footer>
+          <p class="remainingChores">0 items left</p>
+
+          <div class="filters">
+            <button class="filters__all selected">All</button>
+            <button class="filters__active">Active</button>
+            <button class="filters__compleated">Completed</button>
+          </div>
+
+          <button class="clearCompleated invisible">Clear completed</button>
+        </footer>
+      </section>
+    </div>
+
+    <script src="./ListBehaviour.js"></script>
+  </body>
+</html>
